@@ -27,9 +27,10 @@ export default function Home() {
             <a href="#3d-view" className="text-sm font-medium text-gray-300 hover:text-pink-500 transition-colors">
               3D View
             </a>
-            {/* Added "Get your style" button with Lobster font and custom color */}
             <a 
-              href="#get-started" 
+              href="http://localhost:8501"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-sm font-['Lobster',cursive] px-4 py-2 rounded-full bg-pink-500 text-[#0D5404] hover:bg-pink-400 transition-colors"
             >
               Get your style
