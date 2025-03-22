@@ -160,19 +160,15 @@ const Carousel = memo(
                 width: `${faceWidth}px`,
                 transform: `rotateY(${i * (360 / faceCount)}deg) translateZ(${radius}px)`,
               }}
-              onClick={() => handleClick(imgUrl, i)}
             >
               <motion.div
                 className="w-full h-full rounded-xl overflow-hidden border-4 border-pink-200 shadow-lg"
-                whileHover={{ scale: 1.05 }}
               >
                 <motion.img
                   src={imgUrl}
                   alt={`Textile design ${i + 1}`}
-                  layoutId={`img-${imgUrl}`}
                   className="pointer-events-none w-full h-full object-cover"
                   initial={{ filter: "blur(4px)" }}
-                  layout="position"
                   animate={{ filter: "blur(0px)" }}
                   transition={transition}
                 />

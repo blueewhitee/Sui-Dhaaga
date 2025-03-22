@@ -5,8 +5,8 @@ import { ArrowRight, Palette, Calculator, Zap, Image, Droplets, Heart, Star, Spa
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-black to-gray-900">
-      {/* Header */}
-      <header className="border-b border-gray-800">
+      {/* Header - added sticky positioning */}
+      <header className="sticky top-0 z-50 border-b border-gray-800 bg-black/90 backdrop-blur-md">
         <div className="container mx-auto flex items-center justify-between p-4">
           <div className="flex items-center gap-2">
             <Palette className="h-8 w-8 text-pink-500" />
@@ -27,6 +27,13 @@ export default function Home() {
             <a href="#3d-view" className="text-sm font-medium text-gray-300 hover:text-pink-500 transition-colors">
               3D View
             </a>
+            {/* Added "Get your style" button with Lobster font and custom color */}
+            <a 
+              href="#get-started" 
+              className="text-sm font-['Lobster',cursive] px-4 py-2 rounded-full bg-pink-500 text-[#0D5404] hover:bg-pink-400 transition-colors"
+            >
+              Get your style
+            </a>
           </nav>
         </div>
       </header>
@@ -41,9 +48,19 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto mb-24">
             <div className="relative">
-              {/* Bigger container for the cat */}
-              <div className="h-[600px] md:h-[700px] mb-8 overflow-hidden">
-                {/* Scale up the iframe to make the cat appear bigger */}
+              {/* Position text without any background to allow cat to show through */}
+              <div className="absolute top-[60%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-full max-w-5xl px-4 z-20"> {/* Added z-20 to ensure it's above everything */}
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-transparent bg-clip-text">
+                  Silhouette Automata
+                </h1>
+                <p className="text-2xl md:text-3xl lg:text-5xl text-pink-200 font-medium mb-8 mx-auto w-full font-['Lobster',cursive] whitespace-nowrap">
+                  Innovation in Rapid Lifestyle with Automation
+                </p>
+              </div>
+              
+              {/* Bigger container for the cat - maintaining current positioning */}
+              <div className="h-[600px] md:h-[700px] mb-8 overflow-hidden relative -mt-48">
+                {/* Scale up the iframe to make the cat appear bigger and position it vertically */}
                 <div className="w-[120%] h-[120%] -ml-[10%] -mt-[10%]">
                   <iframe 
                     src='https://my.spline.design/robotcat-4a0c5b5615fadd04deece83a135b1726/' 
@@ -57,15 +74,6 @@ export default function Home() {
                 </div>
               </div>
               
-              {/* Position text without any background to allow cat to show through */}
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center max-w-2xl w-full px-4">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-transparent bg-clip-text drop-shadow-lg">
-                  Magical Textile Designs with AI
-                </h1>
-                <p className="text-lg text-gray-300 font-medium mb-8 drop-shadow-lg">
-                  Create colorful, high-quality textile patterns instantly using our magical AI design studio. Perfect for bringing your creative dreams to life.
-                </p>
-              </div>
             </div>
             
             {/* 3D Carousel positioned below */}
