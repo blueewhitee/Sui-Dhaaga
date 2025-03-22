@@ -52,18 +52,14 @@ function useMediaQuery(
 
 // Sample colorful textile design images
 const textileDesigns = [
-  "https://picsum.photos/seed/textile1/400/400?pink",
-  "https://picsum.photos/seed/textile2/400/400?purple",
-  "https://picsum.photos/seed/textile3/400/400?teal",
-  "https://picsum.photos/seed/textile4/400/400?yellow",
-  "https://picsum.photos/seed/textile5/400/400?blue",
-  "https://picsum.photos/seed/textile6/400/400?green",
-  "https://picsum.photos/seed/textile7/400/400?red",
-  "https://picsum.photos/seed/textile8/400/400?orange",
-  "https://picsum.photos/seed/textile9/400/400?pink",
-  "https://picsum.photos/seed/textile10/400/400?purple",
-  "https://picsum.photos/seed/textile11/400/400?teal",
-  "https://picsum.photos/seed/textile12/400/400?yellow",
+  "/images/landingpage/WhatsApp Image 2025-03-22 at 16.12.08_0e935885.jpg",
+  "/images/landingpage/WhatsApp Image 2025-03-22 at 16.12.08_a4d6c767.jpg",
+  "/images/landingpage/WhatsApp Image 2025-03-22 at 16.12.09_9d9752d1.jpg",
+  "/images/landingpage/WhatsApp Image 2025-03-22 at 16.12.09_f353e175.jpg",
+  "/images/landingpage/WhatsApp Image 2025-03-22 at 16.12.10_5352370e.jpg",
+  "/images/landingpage/WhatsApp Image 2025-03-22 at 16.12.10_a38aa958.jpg",
+  "/images/landingpage/WhatsApp Image 2025-03-22 at 16.12.11_41dfe9e9.jpg",
+  "/images/landingpage/WhatsApp Image 2025-03-22 at 16.12.11_d6075f39.jpg",
 ]
 
 // Animation constants
@@ -164,19 +160,15 @@ const Carousel = memo(
                 width: `${faceWidth}px`,
                 transform: `rotateY(${i * (360 / faceCount)}deg) translateZ(${radius}px)`,
               }}
-              onClick={() => handleClick(imgUrl, i)}
             >
               <motion.div
                 className="w-full h-full rounded-xl overflow-hidden border-4 border-pink-200 shadow-lg"
-                whileHover={{ scale: 1.05 }}
               >
                 <motion.img
                   src={imgUrl}
                   alt={`Textile design ${i + 1}`}
-                  layoutId={`img-${imgUrl}`}
                   className="pointer-events-none w-full h-full object-cover"
                   initial={{ filter: "blur(4px)" }}
-                  layout="position"
                   animate={{ filter: "blur(0px)" }}
                   transition={transition}
                 />
