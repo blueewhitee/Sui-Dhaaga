@@ -29,7 +29,9 @@ Key Features of the Project
 ![image](https://github.com/user-attachments/assets/ea6b4b97-e4e4-490d-bc8e-4d40cd794580)
 
 
-https://github.com/user-attachments/assets/5bd42331-58c1-4786-a03b-51c92c27946a
+https://github.com/user-attachments/assets/97ab7426-656f-4e0d-9067-24503a125f2e
+
+
 
 
 
