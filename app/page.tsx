@@ -7,9 +7,9 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-b from-black to-gray-900">
       {/* Header - added sticky positioning */}
       <header className="sticky top-0 z-50 border-b border-gray-800 bg-black/90 backdrop-blur-md">
-        <div className="container mx-auto flex items-center justify-center p-4"> {/* Changed justify-between to justify-center */}
+        <div className="container mx-auto flex items-center justify-center p-4"> {/* Kept justify-center */}
           
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-8 pl-6"> {/* Changed pl-2 to pl-6 for 6px total padding */}
             <a href="#front-view" className="text-sm font-medium text-gray-300 hover:text-pink-500 transition-colors">
               IDEATE
             </a>
@@ -28,7 +28,7 @@ export default function Home() {
               Get your style
             </a>
             <a href="#3d-view" className="text-sm font-medium text-gray-300 hover:text-pink-500 transition-colors">
-              3D TRY-ON
+              VIRTUAL TRY-ON
             </a>
             <a href="#3d-model" className="text-sm font-medium text-gray-300 hover:text-pink-500 transition-colors">
               3D MODEL
