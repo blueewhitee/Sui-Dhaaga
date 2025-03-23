@@ -10,6 +10,9 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .text-stroke-sm {
+    text-shadow: 0 0 1px currentColor, 0 0 1px currentColor;
+  }
 }
 
 @layer base {

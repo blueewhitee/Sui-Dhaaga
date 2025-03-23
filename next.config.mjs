@@ -1,6 +1,7 @@
-let userConfig = undefined
+// Using proper ESM syntax for async/await top-level code
+let userConfig = undefined;
 try {
-  userConfig = await import('./v0-user-next.config')
+  userConfig = await import('./v0-user-next.config.js').catch(() => ({}));
 } catch (e) {
   // ignore error
 }
@@ -20,14 +21,13 @@ const nextConfig = {
     webpackBuildWorker: true,
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
-  },
-}
+  }
+};
 
-mergeConfig(nextConfig, userConfig)
-
-function mergeConfig(nextConfig, userConfig) {
+// In ESM, you need to declare functions before using them
+const mergeConfig = (nextConfig, userConfig) => {
   if (!userConfig) {
-    return
+    return;
   }
 
   for (const key in userConfig) {
@@ -38,11 +38,14 @@ function mergeConfig(nextConfig, userConfig) {
       nextConfig[key] = {
         ...nextConfig[key],
         ...userConfig[key],
-      }
+      };
     } else {
-      nextConfig[key] = userConfig[key]
+      nextConfig[key] = userConfig[key];
     }
   }
-}
+};
 
-export default nextConfig
+// Call the function
+mergeConfig(nextConfig, userConfig);
+
+export default nextConfig;

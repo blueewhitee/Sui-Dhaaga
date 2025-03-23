@@ -7,32 +7,31 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-b from-black to-gray-900">
       {/* Header - added sticky positioning */}
       <header className="sticky top-0 z-50 border-b border-gray-800 bg-black/90 backdrop-blur-md">
-        <div className="container mx-auto flex items-center justify-between p-4">
-          <div className="flex items-center gap-2">
-            <Palette className="h-8 w-8 text-pink-500" />
-            <span className="text-xl font-bold bg-gradient-to-r from-pink-500 to-purple-500 text-transparent bg-clip-text">
-              TextileAI
-            </span>
-          </div>
+        <div className="container mx-auto flex items-center justify-center p-4"> {/* Changed justify-between to justify-center */}
+          
           <nav className="hidden md:flex items-center space-x-8">
             <a href="#front-view" className="text-sm font-medium text-gray-300 hover:text-pink-500 transition-colors">
-              Front View
+              IDEATE
             </a>
             <a
               href="#multi-view"
               className="text-sm font-medium text-gray-300 hover:text-pink-500 transition-colors"
             >
-              Multi View
+              MULTI VIEW
             </a>
-            <a href="#3d-view" className="text-sm font-medium text-gray-300 hover:text-pink-500 transition-colors">
-              3D View
-            </a>
-            {/* Added "Get your style" button with Lobster font and custom color */}
             <a 
-              href="#get-started" 
-              className="text-sm font-['Lobster',cursive] px-4 py-2 rounded-full bg-pink-500 text-[#0D5404] hover:bg-pink-400 transition-colors"
+              href="http://localhost:8501"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-['Lobster',_cursive] px-4 py-2 rounded-full bg-pink-500 text-[#0D5404] hover:bg-pink-400 transition-colors"
             >
               Get your style
+            </a>
+            <a href="#3d-view" className="text-sm font-medium text-gray-300 hover:text-pink-500 transition-colors">
+              3D TRY-ON
+            </a>
+            <a href="#3d-model" className="text-sm font-medium text-gray-300 hover:text-pink-500 transition-colors">
+              3D MODEL
             </a>
           </nav>
         </div>
@@ -50,8 +49,8 @@ export default function Home() {
             <div className="relative">
               {/* Position text without any background to allow cat to show through */}
               <div className="absolute top-[60%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-full max-w-5xl px-4 z-20"> {/* Added z-20 to ensure it's above everything */}
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-transparent bg-clip-text">
-                  Silhouette Automata
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-['Yatra_One',_cursive] leading-relaxed mb-6 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-transparent bg-clip-text tracking-wider overflow-visible py-3 pl-11">
+                  <span>सुई</span><span className="ml-48">धागा</span>
                 </h1>
                 <p className="text-2xl md:text-3xl lg:text-5xl text-pink-200 font-medium mb-8 mx-auto w-full font-['Lobster',cursive] whitespace-nowrap">
                   Innovation in Rapid Lifestyle with Automation
