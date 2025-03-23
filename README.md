@@ -20,9 +20,10 @@ Key Features of the Project
 5. **3D Models for Manufacturing**- Produce exportable 3D design models, ready for CAD/Blender and direct production integration.  
 ![3D MODEL WORKFLOW](https://github.com/user-attachments/assets/1a02d4da-f9ad-456e-9d98-9c2f090b6a94)
 
-6. **Real-Time Cost Insights**- Get instant cost updates for dyes, fabrics, and materials as designs evolve, ensuring budget control.  
-7. **Precise Production Formulas**- Deliver exact color and dye formulas for manufacturers to replicate designs flawlessly.  
-8. **Time-Saving Efficiency**- Slash design cycles from weeks to minutes, streamlining the entire design-to-production workflow.
+**Future Scope**\
+1. **Real-Time Cost Insights**- Get instant cost updates for dyes, fabrics, and materials as designs evolve, ensuring budget control.  
+2. **Precise Production Formulas**- Deliver exact color and dye formulas for manufacturers to replicate designs flawlessly.  
+3. **Time-Saving Efficiency**- Slash design cycles from weeks to minutes, streamlining the entire design-to-production workflow.
 
 **WORKFLOW**\
 ![image](https://github.com/user-attachments/assets/ea6b4b97-e4e4-490d-bc8e-4d40cd794580)
