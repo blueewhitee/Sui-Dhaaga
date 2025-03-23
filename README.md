@@ -37,4 +37,4 @@ Backend: NodeJS, Flask\
 Machine Learning: Stable Diffusion, Python\
 Frontend: NextJS, Spline\
 UI/UX: Figma\
-Additional Tools: OpenCV (image processing), NumPy/Pandas (cost calculations), Docker (deployment), AWS/GCP (hosting)
+Additional Tools: OpenCV (image processing), Docker (deployment), AWS/GCP (hosting)
