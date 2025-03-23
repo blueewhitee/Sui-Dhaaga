@@ -113,9 +113,9 @@ export default function Home() {
               <div className="bg-gray-800 p-3 rounded-full w-fit mb-4">
                 <PaintBucket className="h-6 w-6 text-pink-500" />
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-100">Color Enchantment</h3>
+              <h3 className="text-xl font-semibold mb-3 text-gray-100">Dynamic Design Customization</h3>
               <p className="text-gray-400">
-                Instantly transform your patterns with magical color palettes that perfectly match your style.
+              Remix trending templates with cutting-edge image generation algorithms for fresh, adjustable designs on the fly
               </p>
             </div>
 
@@ -123,9 +123,9 @@ export default function Home() {
               <div className="bg-gray-800 p-3 rounded-full w-fit mb-4">
                 <Repeat className="h-6 w-6 text-pink-500" />
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-100">Seamless Spells</h3>
+              <h3 className="text-xl font-semibold mb-3 text-gray-100">Multi-Angle Visualization</h3>
               <p className="text-gray-400">
-                Create perfectly repeating patterns that are ready for printing on fabric, no visible seams or edges.
+              View designs from six angles instantly after upload, offering a full perspective without physical prototypes.
               </p>
             </div>
 
@@ -133,9 +133,9 @@ export default function Home() {
               <div className="bg-gray-800 p-3 rounded-full w-fit mb-4">
                 <Droplets className="h-6 w-6 text-pink-500" />
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-100">Perfect Color Potions</h3>
+              <h3 className="text-xl font-semibold mb-3 text-gray-100">Virtual 3D Try-Ons</h3>
               <p className="text-gray-400">
-                Get the exact color recipe so your magical designs look exactly the same when they're made in real life.
+              Preview designs on a virtual human model, showcasing fit and style in real-world context.
               </p>
             </div>
 
@@ -143,9 +143,9 @@ export default function Home() {
               <div className="bg-gray-800 p-3 rounded-full w-fit mb-4">
                 <Wand2 className="h-6 w-6 text-pink-500" />
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-100">Design Transmutation</h3>
+              <h3 className="text-xl font-semibold mb-3 text-gray-100">3D Models for Manufacturing</h3>
               <p className="text-gray-400">
-                Easily modify and refine your patterns with our intuitive editing tools - no design experience needed!
+              Produce exportable 3D design models, ready for CAD/Blender and direct production integration
               </p>
             </div>
           </div>
@@ -159,7 +159,7 @@ export default function Home() {
             <div className="flex items-center gap-2 mb-4 md:mb-0">
               <Palette className="h-6 w-6 text-pink-500" />
               <span className="text-lg font-bold bg-gradient-to-r from-pink-500 to-purple-500 text-transparent bg-clip-text">
-                TextileAI
+                
               </span>
             </div>
             <div className="text-sm text-gray-500">
